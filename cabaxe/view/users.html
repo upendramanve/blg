@@ -1,0 +1,51 @@
+<div class="container"> 
+	
+	<!-- Marketing Icons Section -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"> Looking for co-traveler </h1>
+		</div>
+		<div class="col-md-12">
+			<div class="row">
+			  <div class="col-sm-6 col-md-4" ng-repeat="x in names">
+				<div class="thumbnail">
+				  <img src="{{ x.user.picture.medium }}" alt="...">
+				  <div class="caption">
+					<h3>{{ x.user.name.title|capitalize }}. {{ x.user.name.first|capitalize }} {{ x.user.name.last|capitalize }}</h3>
+					<p>
+					<address>{{ x.user.location.street }},<br/> {{ x.user.location.city }},<br/> {{ x.user.location.state }}, {{ x.user.location.zip }}</address>
+					
+					<p> <a href="#" class="btn btn-default" role="button"><i class="fa fa-twitter"></i> @{{ x.user.username }}</a> <a href="#" class="btn btn-primary" role="button">Follow</a> <a class="btn btn-success" href="#"><i class="fa fa-star"></i> Rate</a></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		
+		
+		
+	</div>
+	
+	<hr>
+	
+	<!-- Call to Action Section -->
+	<div class="well">
+		<div class="row">
+			<div class="col-md-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+			</div>
+			<div class="col-md-4"> <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a> </div>
+		</div>
+	</div>
+	<hr>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Copyright &copy; Your Website 2014</p>
+			</div>
+		</div>
+	</footer>
+</div>

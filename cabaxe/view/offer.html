@@ -1,0 +1,179 @@
+<div class="container"> 
+	
+	<!-- Marketing Icons Section -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"> Offer a ride on your next long journey </h1>
+		</div>
+		<div class="col-md-8">
+		<!--type of data -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>Type of trip</h4>
+				</div>
+				<div class="panel-body">
+					<label class="radio-inline">
+					  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> One-time trip 
+					</label>
+					<label class="radio-inline">
+					  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Recurring trip 
+					</label>
+					
+			</div>
+			</div>
+		<!-- close type of data -->
+		<!--exact route -->
+			<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4>Exact route</h4>
+					</div>
+					<div class="panel-body">
+					
+						<div class="form-group">
+						<label for="exampleInputEmail1">Departure</label>
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-location-arrow"></i></div>
+						  <input type="text" class="form-control" id="exampleInputAmount" ng-model="from" placeholder="Your departure point (address, city, station...)">
+						 
+						</div>
+					  </div>
+					  
+					  	<div class="form-group">
+						<label for="exampleInputEmail1">Arrival</label>
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+						  <input type="text" class="form-control" id="exampleInputAmount" ng-model="to" placeholder="Your arrival point (address, city, station...)">
+						 
+						</div>
+					  </div>
+					  
+					  <p>Now enter the main cities you will drive through: this is key to connecting you and your co-travellers</p>
+					  
+					  <div class="form-group">
+						
+						<div class="input-group">
+						  
+						  <input type="text" class="form-control" ng-model="majorcities" id="exampleInputAmount" placeholder="Add cities on your route">
+						 <div class="input-group-addon"><a href="#"><i class="fa fa-plus"></i> Add</a></div>
+						</div>
+					  </div>
+						
+				</div>
+				</div>
+		<!-- close exact route -->
+		<!--type of data -->
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4>Date and time</h4> 
+											
+				</div>
+				<div class="panel-body">
+					<div class="checkbox">
+						<label>
+						  <input type="checkbox"  ng-model="check" value="A">Round trip
+						</label>
+					  </div>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Departure date:</label>
+						<div class="row">
+						<div class="col-md-4">
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+						  <input type="text" class="form-control datepicker" id="exampleInputAmount" ng-model="fromon" placeholder="DD/MM/YYYY">
+						 </div>
+						</div>
+						<div class="col-md-2">
+						<select class="form-control" ng-model="fromHr">
+						  <option ng-repeat="n in [00, 23] | makeRange">{{ n }}</option>
+						</select>
+						</div>
+						<div class="col-md-1">
+						<label>:</label>
+						</div>
+						<div class="col-md-2">
+						<select class="form-control" ng-model="fromMin">
+						  <option ng-repeat="n in [00, 59] | makeRange">{{ n }}</option>
+						</select>
+						</div>
+						</div>
+					  </div>
+					  
+					  <div class="form-group"  ng-show="check">
+						<label for="exampleInputEmail1">Return date:</label>
+						<div class="row">
+						<div class="col-md-4">
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+						  <input type="text" class="form-control datepicker" id="exampleInputAmount" ng-model="returnon" placeholder="DD/MM/YYYY">
+						 </div>
+						</div>
+						<div class="col-md-2">
+						<select class="form-control" ng-model="returnHr">
+						  <option ng-repeat="n in [00, 23] | makeRange">{{ n }}</option>
+						 
+						</select>
+						</div>
+						<div class="col-md-1">
+						<label>:</label>
+						</div>
+						<div class="col-md-2">
+						<select class="form-control" ng-model="returnMin">
+						  <option ng-repeat="n in [00, 59] | makeRange">{{ n }}</option>
+						</select>
+						</div>
+						</div>
+					  </div>
+					
+			</div>
+			</div>
+		<!-- close type of data -->	
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4><i class="fa fa-car"></i> Route itinerary</h4>
+				</div>
+				<div class="panel-body">
+					<p>
+					Travelling from <strong>{{ from }}</strong> on <strong>{{ fromfull() }}</strong> towards  <strong>{{ to }}</strong>  .
+					</p>
+					<hr/>
+					<p>
+					Major cities that would be covered during the journey are <strong>{{ majorcities }}</strong>.
+					</p>
+					<hr/>
+					<p ng-show="check">
+					Returning on <strong>{{ returnfull() }}</strong>
+					<hr/>
+					
+					
+					<a href="#" class="btn btn-default">Learn More</a> </div>
+			</div>
+		</div>
+		
+		
+	</div>
+	
+	<hr>
+	
+	<!-- Call to Action Section -->
+	<div class="well">
+		<div class="row">
+			<div class="col-md-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+			</div>
+			<div class="col-md-4"> <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a> </div>
+		</div>
+	</div>
+	<hr>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Copyright &copy; Your Website 2014</p>
+			</div>
+		</div>
+	</footer>
+</div>

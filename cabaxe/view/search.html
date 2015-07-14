@@ -1,0 +1,314 @@
+<!-- Page Content -->
+<div class="container"> 
+	
+	<!-- Marketing Icons Section -->
+	<div class="row">
+		<div class="col-lg-12">
+			<h1 class="page-header"> Search rides </h1>
+		</div>
+		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4><i class="fa fa-user"></i> Filters</h4>
+				</div>
+				<div class="panel-body">
+					
+					<div class="form-group">
+						<label for="exampleInputEmail1">Departure</label>
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-location-arrow"></i></div>
+						  <input type="text" class="form-control" id="exampleInputAmount" ng-model="from" placeholder="Your departure point (address, city, station...)">
+						 
+						</div>
+					  </div>
+					  
+					  	<div class="form-group">
+						<label for="exampleInputEmail1">Arrival</label>
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-map-marker"></i></div>
+						  <input type="text" class="form-control" id="exampleInputAmount" ng-model="to" placeholder="Your arrival point (address, city, station...)">
+						 
+						</div>
+					  </div>
+					<hr/>
+					<div class="form-group" >
+						<label>Date</label>
+						<div class="input-group">
+						  <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+						  <input type="text" class="form-control datepicker" id="exampleInputAmount" ng-model="fromon" placeholder="DD/MM/YYYY">
+						 
+						</div>
+						
+					</div>
+					<hr/>
+					<div class="form-group" >
+						<label>Ride type</label>
+						<div class="checkbox">
+						<label>
+						  <input type="checkbox"> Two wheeler *
+
+						</label>
+					  </div>
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox"> Mini
+						</label>
+					  </div>
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox"> Sedan
+						</label>
+					  </div>
+					  <div class="checkbox">
+						<label>
+						  <input type="checkbox"> SUV
+						</label>
+					  </div>
+
+						
+					</div>
+					<hr/>
+					<div class="form-group" >
+						<label>Return</label>
+						<div class="checkbox">
+						<label>
+						  <input type="checkbox"> Yes
+						</label>
+					  </div>
+						
+					</div>
+					 </div>
+			</div>
+		</div>
+		
+		<div class="col-md-8">
+			
+			<div class="panel panel-default">
+			  <div class="panel-body">
+				<div class="row">
+					<div class="col-md-8">
+					<h4><strong>4</strong> rides from <strong>Hyderabad</strong>, Telangana to <strong>Mumbai</strong>, Maharashtra</h4> 
+					</div>
+					<div class="col-md-2">
+					<label>Sort</label>	<select class="form-control">
+						<option>Select</option>
+						  <option>By date</option>
+						  <option>By time</option>
+						  <option>Comfort</option>
+						  
+						</select>
+					</div>
+				</div>
+				
+			  </div>
+			</div>
+			<div class="row">
+					<div class="col-md-12">
+					<div class="row carousel-row">
+        <div class="col-xs-12 slide-row">
+            <div id="carousel-1" class="carousel slide slide-carousel" data-ride="carousel">
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="1"></li>
+                <li data-target="#carousel-1" data-slide-to="2"></li>
+				<li data-target="#carousel-1" data-slide-to="3" class="active"></li>
+                <li data-target="#carousel-1" data-slide-to="4"></li>
+                <li data-target="#carousel-1" data-slide-to="5"></li>
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                    <img src="http://lorempixel.com/150/150?rand=1" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=2" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=3" alt="Image">
+                </div>
+				<div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=4" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=5" alt="Image">
+                </div>
+                <div class="item">
+                    <img src="http://lorempixel.com/150/150?rand=6" alt="Image">
+                </div>
+              </div>
+            </div>
+            <div class="slide-content">
+				<div class="row">
+					<div class="col-md-6">
+                <h4><a href="#/ride/1">Sunday 31 May - 	06:00</a></h4>
+				<h4>Hyderabad <i class="fa fa-arrows-h"></i> Mumbai</h4>
+                <p>
+                    Departing from:<br/> <strong><i class="fa fa-location-arrow"></i> Hyderabad</strong> to <strong><i class="fa fa-map-marker"></i> Mumbai</strong>
+					<br/>via: Solapur, daund, pune and kalyan
+                </p>
+				</div>
+				<div class="col-md-6">
+                <h4><a><i class="fa fa-user"></i> John doe</a></h4>
+				<h4>30 years old</h4>
+                <p>
+                    <strong>3</strong> seats left
+					<br/>
+					<i class="fa fa-car"></i> Sedan
+
+                </p>
+				</div>
+				</div>
+            </div>
+            <div class="slide-footer">
+                <span class="pull-right buttons">
+                    <button class="btn btn-sm btn-default"><i class="fa fa-check-square-o"></i> Shortlist</button>
+                    <a href="#/ride/1" class="btn btn-sm btn-primary"><i class="fa fa-flag-checkered"></i> Ride</a>
+                </span>
+            </div>
+        </div>
+    </div>
+					<div class="row carousel-row">
+						<div class="col-xs-12 slide-row">
+							<div id="carousel-2" class="carousel slide slide-carousel" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#carousel-2" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-2" data-slide-to="1"></li>
+								<li data-target="#carousel-2" data-slide-to="2"></li>
+							  </ol>
+							
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+								<div class="item active">
+									<img src="http://lorempixel.com/150/150?rand=4" alt="Image">
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/150/150?rand=5" alt="Image">
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/150/150?rand=6" alt="Image">
+								</div>
+							  </div>
+							</div>
+							<div class="slide-content">
+				<div class="row">
+					<div class="col-md-6">
+                <h4><a href="#/ride/1">Sunday 31 May - 	06:00</a></h4>
+				<h4>Hyderabad <i class="fa fa-long-arrow-right"></i>  Mumbai</h4>
+                <p>
+                    Departing from:<br/> <strong><i class="fa fa-location-arrow"></i> Hyderabad</strong> to <strong><i class="fa fa-map-marker"></i> Mumbai</strong>
+					<br/>via: Solapur, daund, pune and kalyan
+                </p>
+				</div>
+				<div class="col-md-6">
+                <h4><a><i class="fa fa-user"></i> John doe</a></h4>
+				<h4>30 years old</h4>
+                <p>
+                    <strong>3</strong> seats left
+					<br/>
+					<i class="fa fa-motorcycle"></i> Two wheeler
+
+                </p>
+				</div>
+				</div>
+            </div>
+            				<div class="slide-footer">
+                <span class="pull-right buttons">
+                    <button class="btn btn-sm btn-default"><i class="fa fa-check-square-o"></i> Shortlist</button>
+                    <a href="#/ride/1" class="btn btn-sm btn-primary"><i class="fa fa-flag-checkered"></i> Ride</a>
+                </span>
+            </div>
+						</div>
+					</div>
+					<div class="row carousel-row">
+						<div class="col-xs-12 slide-row">
+							<div id="carousel-3" class="carousel slide slide-carousel" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+								<li data-target="#carousel-3" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-3" data-slide-to="1"></li>
+								<li data-target="#carousel-3" data-slide-to="2"></li>
+							  </ol>
+							
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+								<div class="item active">
+									<img src="http://lorempixel.com/150/150?rand=7" alt="Image">
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/150/150?rand=8" alt="Image">
+								</div>
+								<div class="item">
+									<img src="http://lorempixel.com/150/150?rand=9" alt="Image">
+								</div>
+							  </div>
+							</div>
+							<div class="slide-content">
+				<div class="row">
+					<div class="col-md-6">
+                <h4><a href="#/ride/1">Sunday 31 May - 	06:00</a></h4>
+				<h4>Hyderabad  <i class="fa fa-arrows-h"></i> Mumbai</h4>
+                <p>
+                    Departing from:<br/> <strong><i class="fa fa-location-arrow"></i> Hyderabad</strong> to <strong><i class="fa fa-map-marker"></i> Mumbai</strong>
+					<br/>via: Solapur, daund, pune and kalyan
+                </p>
+				</div>
+				<div class="col-md-6">
+                <h4><a><i class="fa fa-user"></i> John doe</a></h4>
+				<h4>30 years old</h4>
+                <p>
+                    <strong>3</strong> seats left
+					<br/>
+					<i class="fa fa-car"></i> Sedan
+
+                </p>
+				</div>
+				</div>
+            </div>
+            				<div class="slide-footer">
+                <span class="pull-right buttons">
+                    <button class="btn btn-sm btn-default"><i class="fa fa-check-square-o"></i> Shortlist</button>
+                    <a href="#/ride/1" class="btn btn-sm btn-primary"><i class="fa fa-flag-checkered"></i> Ride</a>
+                </span>
+            </div>
+						</div>
+					</div>
+					</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<!-- /.row --> 
+	
+	<!-- Portfolio Section -->
+	
+	
+	<!-- /.row -->
+	
+	<hr>
+	
+	<!-- Call to Action Section -->
+	<div class="well">
+		<div class="row">
+			<div class="col-md-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+			</div>
+			<div class="col-md-4"> <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a> </div>
+		</div>
+	</div>
+	<hr>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="row">
+			<div class="col-lg-12">
+				<p>Copyright &copy; Your Website 2014</p>
+			</div>
+		</div>
+	</footer>
+</div>
+<!-- /.container --> 
